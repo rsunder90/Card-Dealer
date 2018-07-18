@@ -24,6 +24,8 @@ Endpoints:
 
 -{host}:8080/dealOneCard - This is a GET endpoint that deals one card until the deck runs out of cards (where it will return a 400).
 
+-{host}:8080/dealCards - This is an optional POST endpoint that requests an integer from a user between 1 and 52 and deals that number of cards. If the number is larger than the remaining number of cards, it will return all the remaining cards.
+
 Notes:
 
 I figured the best use case for a card dealing application involved it being some sort of server acting as a "dealer" that is in charge of card distribution to participating players. Multiple users can theoretically hit these endpoints and play whatever game they want to with this interface because the server keeps track of the cards.
